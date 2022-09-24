@@ -17,10 +17,12 @@
       "required": true
     },
     "remoteOk": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "featuredJob": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "datePosted": {
       "type": "datetime"
