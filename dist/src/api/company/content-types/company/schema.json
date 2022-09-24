@@ -51,6 +51,12 @@
             "type": "uid",
             "targetField": "name",
             "required": true
+        },
+        "jobs": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::job.job",
+            "mappedBy": "company"
         }
     }
 }
