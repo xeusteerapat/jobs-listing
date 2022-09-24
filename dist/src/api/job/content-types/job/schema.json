@@ -25,7 +25,8 @@
             "default": false
         },
         "datePosted": {
-            "type": "datetime"
+            "type": "datetime",
+            "required": true
         },
         "level": {
             "type": "enumeration",
@@ -34,7 +35,8 @@
                 "Mid-level",
                 "Senior",
                 "Tech-lead"
-            ]
+            ],
+            "required": true
         },
         "jobType": {
             "type": "enumeration",
@@ -42,16 +44,22 @@
                 "Full-time",
                 "Part-time",
                 "Contract"
-            ]
+            ],
+            "required": true
         },
         "category": {
-            "type": "string"
+            "type": "string",
+            "required": true,
+            "minLength": 3
         },
         "applicationLink": {
-            "type": "string"
+            "type": "string",
+            "required": true,
+            "regex": "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)"
         },
         "description": {
-            "type": "richtext"
+            "type": "richtext",
+            "required": true
         },
         "aboutYou": {
             "type": "richtext"
@@ -63,6 +71,9 @@
             "type": "uid",
             "targetField": "title",
             "required": true
+        },
+        "remunerationPackage": {
+            "type": "richtext"
         }
     }
 }
