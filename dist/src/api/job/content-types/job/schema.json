@@ -1,0 +1,59 @@
+{
+    "kind": "collectionType",
+    "collectionName": "jobs",
+    "info": {
+        "singularName": "job",
+        "pluralName": "jobs",
+        "displayName": "Job"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "remoteOk": {
+            "type": "boolean"
+        },
+        "featuredJob": {
+            "type": "boolean"
+        },
+        "datePosted": {
+            "type": "datetime"
+        },
+        "level": {
+            "type": "enumeration",
+            "enum": [
+                "Junior",
+                "Mid-level",
+                "Senior",
+                "Tech-lead"
+            ]
+        },
+        "jobType": {
+            "type": "enumeration",
+            "enum": [
+                "Full-time",
+                "Part-time",
+                "Contract"
+            ]
+        },
+        "category": {
+            "type": "string"
+        },
+        "applicationLink": {
+            "type": "string"
+        },
+        "description": {
+            "type": "richtext"
+        },
+        "aboutYou": {
+            "type": "richtext"
+        },
+        "responsibilities": {
+            "type": "richtext"
+        }
+    }
+}
